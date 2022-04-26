@@ -17,50 +17,21 @@ It is a simple API server based on django[^1], it take base information and addi
 
 *Additional information which it processes:*
 
-| Parameter                         | Include in                                                       |
+| Parameter                         | Includes                                                         |
 | --------------------------------- | ---------------------------------------------------------------- |
 | ID                                | ID in database                                                   |
-| Host information                  | Username, Sysname, Hostname, Boot time                           |
-| Environment                       | a lot of information it depends of you :yum:                     |
+| Host information                  | Username, sysname, hostname, boot time                           |
+| Environment                       | A lot of information it depends of you :yum:                     |
 | Network (all of yours interfaces) | Name of interface, MTU, private IP address                       |
 | Memory                            | Memory total volume, memory used volume, percent of memory       |
 | Disk drivers (all of yours)       | Device, mountpoint, file system type, total volume, used volume  |
-| CPU                               | Count of cpu cores                                               |
+| CPU                               | Count of CPU cores, count of threads, CPU freqency(max value)    |
 | Load average                      | 1 min, 5 min, 15 min                                             |
 
-1. ID
-2. Host information
-   - Username
-   - Sysname
-   - Hostname
-   - Boot time
-3. Environment(a lot of information it depends of you :yum:)
-4. Network (all of yours interfaces)
-   - Name of interface
-   - MTU
-   - Inside IP address
-5. Memory
-   - Memory total volume
-   - Memory used volume
-   - Percent of memory 
-6. Disk drivers (all of yours):
-   - Device
-   - Mountpoint
-   - File system type
-   - Total volume
-   - Used volume
-7. CPU
-   - Count of cpu cores
-   - Count of threads
-   - CPU freqency(max value)
-8. Load average
-   - 1 min
-   - 5 min
-   - 15 min
 
 ###### ***Client part***
 
-It is just a python script, which i've tested while only on Linux based OS, for use it you need [python](https://cdn.pixabay.com/photo/2013/07/13/13/34/linux-161108_1280.png)... I think 3.8 version and upper 
+It is just a python script, which i've tested while only on Linux based OS, for use it you need [python](https://www.python.org/downloads/)... I think 3.8 version and upper 
 
 *Information which send our script*
 
@@ -76,8 +47,8 @@ It is just a python script, which i've tested while only on Linux based OS, for 
   - Available of [outside server](https://api.my-ip.io/ip) before of sending data
   - Available of [inside server](http://127.0.0.1:8000/api/additional_information/) before of sending data
 
-> ~~And some checks for script works~~
-Like this
+> ~~And some checks for script works like this~~
+
 ```
 def check_server_availability(url):
      try:
@@ -92,73 +63,10 @@ def check_server_availability(url):
 
 ## Task Lists
 - [x] Exit from programm if catch exceptions
-- [-] Transfer server part to outside
-- [-] Maybe someone else checks
-- [-] Test on Windows OS systems
-- [-] Test on Mac OS systems
+- [ ] Transfer server part to outside
+- [ ] Maybe someone else checks
+- [ ] Test on Windows OS systems
+- [ ] Test on Mac OS systems
 - [x] Make coffee and relax
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ![Keep calm and learn Linux](https://cdn.pixabay.com/photo/2013/07/13/13/34/linux-161108_1280.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [^1]: And of course it is my final project from mini practices about Python by Rebrain :kissing_heart:
