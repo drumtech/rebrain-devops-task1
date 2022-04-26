@@ -1,4 +1,4 @@
-#Common info about application
+# Common info about application
 This application is for simple monitoring your devices like: **servers**, *laptop*, **home _PC_**, but not for ~~smartphone~~
 
 ## More details
@@ -16,6 +16,17 @@ It is a simple API server based on django[^1], it take base information and addi
 5. Is server active?(True/False)
 
 *Additional information which it processes:*
+
+| Parameter                         | Include in                                                       |
+| ID                                | ID in database                                                   |
+| Host information                  | Username, Sysname, Hostname, Boot time                           |
+| Environment                       | a lot of information it depends of you :yum:                     |
+| Network (all of yours interfaces) | Name of interface, MTU, private IP address                       |
+| Memory                            | Memory total volume, memory used volume, percent of memory       |
+| Disk drivers (all of yours)       | Device, mountpoint, file system type, total volume, used volume  |
+| CPU                               | Count of cpu cores                                               |
+| Load average                      | 1 min, 5 min, 15 min                                             |
+
 1. ID
 2. Host information
    - Username
@@ -48,7 +59,7 @@ It is a simple API server based on django[^1], it take base information and addi
 
 ###### ***Client part***
 
-It is just a python script, which i've tested while only on Linux based OS, for use it you need python... I think 3.8 version and upper
+It is just a python script, which i've tested while only on Linux based OS, for use it you need [python](https://cdn.pixabay.com/photo/2013/07/13/13/34/linux-161108_1280.png)... I think 3.8 version and upper 
 
 *Information which send our script*
 
@@ -80,13 +91,72 @@ def check_server_availability(url):
 
 ## Task Lists
 - [x] Exit from programm if catch exceptions
-- [] Transfer server part to outside
-- [] Maybe someone else checks
-- [] Test on Windows OS systems
-- [] Test on Mac OS systems
+- [-] Transfer server part to outside
+- [-] Maybe someone else checks
+- [-] Test on Windows OS systems
+- [-] Test on Mac OS systems
 - [x] Make coffee and relax
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ![Keep calm and learn Linux](https://cdn.pixabay.com/photo/2013/07/13/13/34/linux-161108_1280.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
