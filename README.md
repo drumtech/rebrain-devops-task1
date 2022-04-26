@@ -31,9 +31,9 @@ It is a simple API server based on django[^1], it take base information and addi
 
 ###### ***Client part***
 
-It is just a python script, which i've tested while only on Linux based OS, for use it you need [python](https://www.python.org/downloads/)... I think 3.8 version and upper 
+It is just a python [script](data.py), which i've tested while only on Linux based OS, for use it you need [python](https://www.python.org/downloads/)... I think 3.8 version and upper 
 
-*Information which send our script*
+*Information which send our [script](data.py)*
 
 **Once every 60 seconds it sends data to the server**
 ~~If you look up you'll see everything it's sending :smile:~~
@@ -47,7 +47,7 @@ It is just a python script, which i've tested while only on Linux based OS, for 
   - Available of [public server](https://api.my-ip.io/ip) before of sending data
   - Available of [private server](http://127.0.0.1:8000/api/additional_information/) before of sending data
 
-> ~~And some checks for script works like this~~
+> ~~And some checks for [script](data.py) works like this~~
 
 ```
 def check_server_availability(url):
