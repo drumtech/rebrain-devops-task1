@@ -1,12 +1,12 @@
-#Common info about application
+# Common info about application
 This application is for simple monitoring your devices like: **servers**, *laptop*, **home _PC_**, but not for ~~smartphone~~
 
 ## More details
 Our application has two part - server part and clien part.
 
-######***Server part***
+###### ***Server part***
 
-It is a simple API server based on django[^1], it can take base information and additional information from your devices with helps from client part
+It is a simple API server based on django [^1], it can take base information and additional information from your devices with helps from client part
 
 *Based information which it processes:*
 1. ID
@@ -46,7 +46,7 @@ It is a simple API server based on django[^1], it can take base information and 
    - 5 min
    - 15 min
 
-######***Client part***
+###### ***Client part***
 
 It is just a python script, which i've tested while only on Linux based OS, for use it you need python... I think 3.8 version and upper
 
