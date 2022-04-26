@@ -1,4 +1,4 @@
-#                                         Common info about application
+#Common info about application
 This application is for simple monitoring your devices like: **servers**, *laptop*, **home _PC_**, but not for ~~smartphone~~
 
 ## More details
@@ -6,7 +6,7 @@ Our application has two part - server part and clien part.
 
 ###### ***Server part***
 
-It is a simple API server based on django [^1], it can take base information and additional information from your devices with helps from client part
+It is a simple API server based on django[^1], it take base information and additional information from your devices with helps from client part
 
 *Based information which it processes:*
 1. ID
@@ -50,7 +50,7 @@ It is a simple API server based on django [^1], it can take base information and
 
 It is just a python script, which i've tested while only on Linux based OS, for use it you need python... I think 3.8 version and upper
 
-*Information which sand our script*
+*Information which send our script*
 
 **Once every 60 seconds it sends data to the server**
 ~~If you look up you'll see everything it's sending :smile:~~
@@ -64,11 +64,30 @@ It is just a python script, which i've tested while only on Linux based OS, for 
   - Available of [outside server](https://api.my-ip.io/ip) before of sending data
   - Available of [inside server](http://127.0.0.1:8000/api/additional_information/) before of sending data
 
-* > And some checks for script works 
+> ~~And some checks for script works~~
+Like this
+```
+def check_server_availability(url):
+     try:
+         url_get = requests.get(url)
+         url_get.raise_for_status()
+         logging.info(f'Resource {url} is ready')
+     except requests.exceptions.RequestException as err:
+         logging.error(str(err))
+         print(f'Some troubles with {url}')
+         exit()
+```
+
+## Task Lists
+- [x] Exit from programm if catch exceptions
+- [] Transfer server part to outside
+- [] Maybe someone else checks
+- [] Test on Windows OS systems
+- [] Test on Mac OS systems
+- [x] Make coffee and relax
+
+![Keep calm and learn Linux](https://cdn.pixabay.com/photo/2013/07/13/13/34/linux-161108_1280.png)
 
 
 
-
-
-
-[^1] And of course it is my final project from mini practices about Python by Rebrain :kissing_heart:
+[^1]: And of course it is my final project from mini practices about Python by Rebrain :kissing_heart:
