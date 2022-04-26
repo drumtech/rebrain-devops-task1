@@ -18,6 +18,7 @@ It is a simple API server based on django[^1], it take base information and addi
 *Additional information which it processes:*
 
 | Parameter                         | Include in                                                       |
+| --------------------------------- | ---------------------------------------------------------------- |
 | ID                                | ID in database                                                   |
 | Host information                  | Username, Sysname, Hostname, Boot time                           |
 | Environment                       | a lot of information it depends of you :yum:                     |
