@@ -1,0 +1,5 @@
+# Exclude tmp directories 
+tmp/
+
+# Exclude temporary vim files
+*.swp
